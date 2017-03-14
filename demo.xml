@@ -1,0 +1,83 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="demo.xsl"?>
+<root>
+  <env>
+    <domain>local</domain>
+  </env>
+  <p>
+    <title>demo page</title>
+    <desc>this is deme page</desc>
+    <owner>openxsl</owner>
+    <icon>//oxm1.cc/img/app_default.png</icon>
+  </p>
+  <data>
+        <string-list>
+        <i>
+            good watch
+        </i>
+    </string-list>
+    <addressbook>
+        <i>
+            <province>
+                strong watch
+            </province>
+            <city>
+                watch
+            </city>
+            <district>
+                wallet
+            </district>
+            <street>
+                notebook
+            </street>
+            <detail>
+                watch
+            </detail>
+            <name>
+                powerful screen
+            </name>
+            <phone>
+                watch
+            </phone>
+        </i>
+    </addressbook>
+    <product>
+        <id>
+            nice car
+        </id>
+        <price>
+            208.38
+        </price>
+        <orig_price>
+            0.5
+        </orig_price>
+        <img>
+            <i>
+                //oxm1.cc/img/fox.jpg
+            </i>
+        </img>
+        <title>
+            car
+        </title>
+        <desc>
+            car
+        </desc>
+        <param>
+            <i>
+                <label>
+                    powerful screen
+                </label>
+                <value>
+                    powerful mobilephone
+                </value>
+            </i>
+        </param>
+        <tags>
+            <i>
+                mobilephone
+            </i>
+        </tags>
+    </product>
+  </data>
+
+</root>
