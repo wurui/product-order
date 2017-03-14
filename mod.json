@@ -1,6 +1,6 @@
 {
   "name": "product-order",
   "version": "1.0.0",
-  "apiDependencies": ["string-list","addressbook","product"]
+  "apiDependencies": ["options","addressbook","product"]
 }
 

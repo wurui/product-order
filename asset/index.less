@@ -1,0 +1,142 @@
+.oxmod-product-order{
+/* CSS */
+  .product{
+    background-color: #f5f5f5;
+
+    padding:10px 10px 10px 120px;
+    overflow: hidden;
+    .title{
+      font-size:14px;
+      font-weight: 400;
+      color:#333;
+      margin-bottom: 10px;
+    }
+
+    .mainpic{
+      float:left;
+      margin-left:-110px;
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      background-color: #fff;
+      background-position: center center;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+  .ordertable{
+    td,th{
+      font-weight: 400;
+      vertical-align: top;
+      border-bottom: solid 1px #f5f5f5;
+      padding:5px;
+    }
+    th{
+      line-height: 30px;
+    }
+    td{
+      text-align: right;
+      font-size:12px;
+    }
+    select{
+      height:30px;
+    }
+  }
+  .price{
+    color:#f20;
+    font-style: normal;
+    font-size:22px;
+    line-height: 1;
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: -3px;
+    &:before{
+      content:'\a5\20';
+      font-size:14px;
+      vertical-align: middle;
+    }
+  }
+  .num-ctrl{
+    button{
+      background-color: #f5f5f5;
+      font-size:16px;
+      width:30px;
+      height:30px;
+      padding:0;
+      border:solid 1px #f5f5f5;
+    }
+    input{
+      width:30px;
+      padding:0;
+      height:28px;
+      border:solid 1px #fff;
+      margin:0 5px;
+      font-size:15px;
+      text-align: center;
+    }
+  }
+  .op{
+    padding:10px 5px;
+  }
+  .bt-submit{
+    width:100%;
+    height:40px;
+    background-color: #f60;
+    color:#fff;
+    border:solid 1px #ccc;
+    border-radius: 10px;
+    font-size:16px;
+  }
+  .total{
+    padding:5px;
+  }
+  .count{
+    float:right;
+    margin-top:5px;
+  }
+  .popup{
+    position: fixed;
+    height:100%;
+    width: 100%;
+    background-color: rgba(0,0,0,.3);
+    top:0;
+    left:0;
+    opacity: 0;
+    transition: all .5s;
+    visibility: hidden;
+    .cnt{
+      transition: all .5s;
+      transform: translate(0,100%);
+      position: absolute;
+      bottom:0;
+      left:0;
+      width:100%;
+      background-color: #fff;
+      box-sizing: border-box;
+      padding:10px;
+    }
+  }
+  .popup-show{
+    //display: block;
+    visibility: visible;
+    opacity: 1;
+    .cnt{
+      transform: translate(0,0);
+    }
+  }
+  .addresslist{
+    li{
+      padding:5px 40px 5px 0;
+      border-top: solid 1px #f5f5f5;
+      &:first-child{
+        border-top-style: none;
+      }
+    }
+    .sign{
+      float:right;
+      margin-top:10px;
+      margin-right:-30px;
+    }
+  }
+
+ }

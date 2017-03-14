@@ -1,83 +1,136 @@
 <?xml version="1.0"?>
 <?xml-stylesheet type="text/xsl" href="demo.xsl"?>
 <root>
-  <env>
-    <domain>local</domain>
-  </env>
-  <p>
-    <title>demo page</title>
-    <desc>this is deme page</desc>
-    <owner>openxsl</owner>
-    <icon>//oxm1.cc/img/app_default.png</icon>
-  </p>
-  <data>
-        <string-list>
-        <i>
-            good watch
-        </i>
-    </string-list>
-    <addressbook>
-        <i>
-            <province>
-                strong watch
-            </province>
-            <city>
-                watch
-            </city>
-            <district>
-                wallet
-            </district>
-            <street>
-                notebook
-            </street>
-            <detail>
-                watch
-            </detail>
-            <name>
-                powerful screen
-            </name>
-            <phone>
-                watch
-            </phone>
-        </i>
-    </addressbook>
-    <product>
-        <id>
-            nice car
-        </id>
-        <price>
-            208.38
-        </price>
-        <orig_price>
-            0.5
-        </orig_price>
-        <img>
+    <env>
+        <domain>local</domain>
+    </env>
+    <p>
+        <title>demo page</title>
+        <desc>this is deme page</desc>
+        <owner>openxsl</owner>
+        <icon>//oxm1.cc/img/app_default.png</icon>
+    </p>
+    <data>
+        <options>
+            <i><text>快递 包邮</text><value>1</value></i>
+            <i><text>自取</text><value>2</value></i>
+        </options>
+        <addressbook>
             <i>
-                //oxm1.cc/img/fox.jpg
+                <province>
+                    浙江
+                </province>
+                <city>
+                    杭州
+                </city>
+                <district>
+                    西湖
+                </district>
+                <street>
+                    余杭
+                </street>
+                <detail>
+                    同城印象西区10111
+                </detail>
+                <name>
+                    吴大帅
+                </name>
+                <phone>
+                    18111112222
+                </phone>
             </i>
-        </img>
-        <title>
-            car
-        </title>
-        <desc>
-            car
-        </desc>
-        <param>
             <i>
-                <label>
-                    powerful screen
-                </label>
-                <value>
-                    powerful mobilephone
-                </value>
+                <province>
+                    上海
+                </province>
+                <city>
+                    上海
+                </city>
+                <district>
+                    浦东新
+                </district>
+                <street>
+                    张江
+                </street>
+                <detail>
+                    金科路10111号
+                </detail>
+                <name>
+                    吴小帅
+                </name>
+                <phone>
+                    18999998888
+                </phone>
             </i>
-        </param>
-        <tags>
-            <i>
-                mobilephone
-            </i>
-        </tags>
-    </product>
-  </data>
+        </addressbook>
+        <product>
+            <id>
+                strong notebook
+            </id>
+            <price>
+                0.08
+            </price>
+            <orig_price>
+                2.32
+            </orig_price>
+            <img>
+                <i>http://i.oxm1.cc/uploads/git/wurui/img/2aj4ikjxcTj07uh1sgRtjukA8ob-667.jpg</i>
+                <i>http://i.oxm1.cc/uploads/git/wurui/img/2ajj22zsuTiztaylwyRba07Flrp.jpg</i>
+                <i>http://i.oxm1.cc/uploads/git/wurui/img/2ajj230djTiztaylc9R2k8rGoeu.jpg</i>
+            </img>
+            <title>好时（Hershey’s）好时kisses臻吻巧克力 浪漫满屋 京东限量定制礼盒 90g</title>
+            <desc><![CDATA[
+            产品描述
+如果说惠威M200开辟了PC行业的HIFI时代，其第三代产品M200MKIII即是皇冠上的明珠，凭借先进的现代电声设计理念及出众声音表现征服了无数发烧友，也成为众多音乐爱好者的梦想之选。…
+<img src="http://i.oxm1.cc/uploads/git/wurui/img/2ajsrqjg3Tizjlb29pRrigwA1l1e.jpg"/>
+包装清单
+主音箱*1、副音箱*1、遥控器*1、连接线*1、电源线*1、RCA转3.5音频线*1、光纤线*1、说明书*1、保修卡*1、合格证*1
+品牌简介
+惠威音响源自中国，名誉世界。 经过24年的高速发展，HiVi惠威已成为高级音响制造公司，并且以各类杰出电声产品享誉业界。…
+>	产品特征
+4000909199/020-34922886 28毫米天然纤维振膜球顶高音/5.25英寸长冲程大动态低音…
+
+Amazon.cn销售排行榜: 77
+            ]]>
+            </desc>
+            <tags>
+                <i>baoyou</i>
+            </tags>
+            <param>
+                <i>
+                    <label>
+                        制造商
+                    </label>
+                    <value>
+                        HIVI 惠威
+                    </value>
+                </i>
+                <i>
+                    <label>
+                        型号
+                    </label>
+                    <value>
+                        M200MKIII+
+                    </value>
+                </i>
+                <i>
+                    <label>
+                        产品尺寸及重量
+                    </label>
+                    <value>
+                        27.3 cm x 19.4 cm x 33.8 cm; 13 Kg
+                    </value>
+                </i>
+                <i>
+                    <label>
+                        ASIN
+                    </label>
+                    <value>
+                        B01MTW25ET
+                    </value>
+                </i>
+            </param>
+        </product>
+    </data>
 
 </root>
