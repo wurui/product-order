@@ -23,6 +23,9 @@
   background-size: contain;
   background-repeat: no-repeat;
 }
+.oxmod-product-order .ordertable {
+  width: 100%;
+}
 .oxmod-product-order .ordertable td,
 .oxmod-product-order .ordertable th {
   font-weight: 400;

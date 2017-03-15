@@ -18,7 +18,7 @@
                     </span>
                 </p>
             </div>
-            <table class="ordertable">
+            <table class="ordertable" cellpadding="0" cellspacing="0">
                 <tbody>
                     <tr>
                         <th>购买数量</th>
