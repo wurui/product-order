@@ -1,7 +1,23 @@
-define([],function(){
+define(['oxjs'],function(OXJS){
   return {
     init:function($mod){
         var triggerTd;
+
+        var f=$('form',$mod)[0];
+
+        var $count=$('.J_count',$mod),
+            $totalPrice=$('.J_total',$mod),
+            price= $.trim($('.J_price').text())- 0,
+            $amountInput=$('.J_input',$mod).on('change',onAmountChange);
+
+        var onAmountChange=function(){
+            var amount=$amountInput.val();
+            $count.html(amount);
+            $totalPrice.html(amount * price);
+        };
+
+
+
         var $popup=$('.J_popup',$mod).on('tap',function(){
             $popup.removeClass('popup-show')
         }).on('change',function(e){
@@ -24,14 +40,23 @@ define([],function(){
                 case 'plus':
                     var $input=$(tar).prev('.J_input');
                     $input.val($input.val() - -1);
+                    onAmountChange();
                     break
                 case 'minus':
 
                     var $input=$(tar).next('.J_input');
                     $input.val(Math.max(1,$input.val()  -1));
+                    onAmountChange();
                     break
+                case 'submit':
+                    var param=OXJS.formToJSON(f),
+                    addr_name=$('.J_addr_name',f).html(),
+                        addr_detail=$('.J_addr_detail',f).html();
+                    param.address=addr_name.replace(/\s+/g,'')+' '+addr_detail.replace(/\s+/g,'');
+                    console.log('param',param);
+                    break;
             }
-        })
+        });
     }
   }
 })
