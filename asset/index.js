@@ -3,6 +3,8 @@ define(['oxjs'],function(OXJS){
     init:function($mod){
         var triggerTd;
 
+        var payurl=$mod.attr('data-payurl');
+
         var f=$('form',$mod)[0];
 
         var $count=$('.J_count',$mod),
@@ -55,13 +57,18 @@ define(['oxjs'],function(OXJS){
                     addr_name=$('.J_addr_name',f).html(),
                         addr_detail=$('.J_addr_detail',f).html();
                     param.address=addr_name.replace(/\s+/g,'')+' '+addr_detail.replace(/\s+/g,'');
-                    console.log('param',param);
+                    //console.log('param',param);
                     OXJS.dbtool({
                         dsname:'order',
                         method:'insert',
                         data:param
                     },function(r){
-                        console.log(r)
+                        if(r.data && r.data.tradeno){
+                            location.href=payurl+(payurl.indexOf('?')>-1?'&':'?')+'tradeno='+r.data.tradeno
+                        }else{
+                            alert(r.error)
+                        }
+                        //console.log(r)
                     });
                     break;
             }

@@ -1,11 +1,11 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:oxm="https://www.openxsl.com">
 
     <xsl:template match="/root" name="wurui.product-order">
-        <xsl:param name="post_url"/>
+        <xsl:param name="pay_url"/>
         <!-- className 'J_OXMod' required  -->
 
-        <div class="J_OXMod oxmod-product-order" ox-mod="product-order">
-            <form action="{$post_url}">
+        <div class="J_OXMod oxmod-product-order" ox-mod="product-order" data-payurl="{$pay_url}">
+            <form>
                 <input type="hidden" name="product_id" value="{normalize-space(data/product/id)}"/>
                 <input type="hidden" name="price" value="{normalize-space(data/product/price)}"/>
                 <div class="product">
