@@ -54,6 +54,13 @@ define(['oxjs'],function(OXJS){
                         addr_detail=$('.J_addr_detail',f).html();
                     param.address=addr_name.replace(/\s+/g,'')+' '+addr_detail.replace(/\s+/g,'');
                     console.log('param',param);
+                    OXJS.dbtool({
+                        dsname:'order',
+                        method:'insert',
+                        data:param
+                    },function(r){
+                        console.log(r)
+                    });
                     break;
             }
         });
