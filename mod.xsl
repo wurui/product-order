@@ -7,6 +7,7 @@
         <div class="J_OXMod oxmod-product-order" ox-mod="product-order">
             <form action="{$post_url}">
                 <input type="hidden" name="product_id" value="{normalize-space(data/product/id)}"/>
+                <input type="hidden" name="price" value="{normalize-space(data/product/price)}"/>
                 <div class="product">
                     <span class="mainpic" style="background-image:url({data/product/img/i[1]});"></span>
                     <h3 class="title">
