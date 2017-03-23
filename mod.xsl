@@ -75,6 +75,7 @@
                     <span class="price J_total">
                         <xsl:value-of select="data/product/price"/>
                     </span>
+                    <input type="hidden" name="total" value="{data/product/price}"/>
                 </p>
                 <!--
                 <p class="payment">

@@ -13,7 +13,9 @@ define(['oxjs'],function(OXJS){
         var onAmountChange=function(){
             var amount=$amountInput.val();
             $count.html(amount);
-            $totalPrice.html(amount * price);
+            var total=amount * price
+            $totalPrice.html(total);
+            f.total.value=total;
         };
 
 
