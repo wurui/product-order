@@ -6,6 +6,7 @@
 
         <div class="J_OXMod oxmod-product-order" ox-mod="product-order" data-payurl="{$pay_url}">
             <form>
+                <input type="hidden" name="ds_id" value="{normalize-space(data/product/attribute::ADAPTERID)}"/>
                 <input type="hidden" name="product_id" value="{normalize-space(data/product/id)}"/>
                 <input type="hidden" name="price" value="{normalize-space(data/product/price)}"/>
                 <div class="product">
