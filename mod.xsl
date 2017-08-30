@@ -2,13 +2,17 @@
 
     <xsl:template match="/root" name="wurui.product-order">
         <xsl:param name="pay_url"/>
+        <xsl:param name="dsid">e0ee59439b39fcc3</xsl:param>
         <!-- className 'J_OXMod' required  -->
 
-        <div class="J_OXMod oxmod-product-order" ox-mod="product-order" data-payurl="{$pay_url}">
+        <div class="J_OXMod oxmod-product-order" ox-mod="product-order" data-uid="{login/uid}" data-dsid="{$dsid}" data-payurl="{$pay_url}">
             <form>
+                <!--
                 <input type="hidden" name="ds_id" value="{normalize-space(data/product/attribute::ADAPTERID)}"/>
+                -->
                 <input type="hidden" name="product_id" value="{normalize-space(data/product/id)}"/>
                 <input type="hidden" name="price" value="{normalize-space(data/product/price)}"/>
+                <input type="hidden" name="title" value="{normalize-space(data/product/title)}"/>
                 <div class="product">
                     <span class="mainpic" style="background-image:url({data/product/img/i[1]});"></span>
                     <h3 class="title">
@@ -56,15 +60,15 @@
                             <td>
                                 <xsl:variable name="defAddr" select="data/addressbook/i[1]"/>
                                 <p class="J_addr_name">
-                                    <xsl:value-of select="normalize-space($defAddr/name)"/>
-                                    (<xsl:value-of select="normalize-space($defAddr/phone)"/>)
+                                    <span class="J_address_name"><xsl:value-of select="normalize-space($defAddr/name)"/></span>
+                                    (<span class="J_address_phone"><xsl:value-of select="normalize-space($defAddr/phone)"/></span>)
                                 </p>
                                 <span class="J_addr_detail">
-                                    <xsl:value-of select="normalize-space($defAddr/province)"/>省
-                                    <xsl:value-of select="normalize-space($defAddr/city)"/>市
-                                    <xsl:value-of select="normalize-space($defAddr/district)"/>区
-                                    <xsl:value-of select="normalize-space($defAddr/street)"/>街道
-                                    <xsl:value-of select="normalize-space($defAddr/detail)"/>
+                                    <span class="J_address_province"><xsl:value-of select="normalize-space($defAddr/province)"/></span>省
+                                    <span class="J_address_city"><xsl:value-of select="normalize-space($defAddr/city)"/></span>市
+                                    <span class="J_address_district"><xsl:value-of select="normalize-space($defAddr/district)"/></span>区
+                                    <span class="J_address_street"><xsl:value-of select="normalize-space($defAddr/street)"/></span>街道
+                                    <span class="J_address_detail"><xsl:value-of select="normalize-space($defAddr/detail)"/></span>
                                 </span>
                                 <button type="button" data-action="popup">&gt;</button>
                             </td>
@@ -108,15 +112,15 @@
                                     </input>
                                 </span>
                                 <label for="{$radio-id}" class="J_addr_name">
-                                    <xsl:value-of select="normalize-space(name)"/>(<xsl:value-of select="normalize-space(phone)"/>)
+                                    <span class="J_address_name"><xsl:value-of select="normalize-space(name)"/></span>(<span class="J_address_phone"><xsl:value-of select="normalize-space(phone)"/></span>)
                                 </label>
                                 <br/>
                                 <label for="{$radio-id}" class="J_addr_detail">
-                                    <xsl:value-of select="normalize-space(province)"/>省
-                                    <xsl:value-of select="normalize-space(city)"/>市
-                                    <xsl:value-of select="normalize-space(district)"/>区
-                                    <xsl:value-of select="normalize-space(street)"/>街道
-                                    <xsl:value-of select="normalize-space(detail)"/>
+                                    <span class="J_address_province"><xsl:value-of select="normalize-space(province)"/></span>省
+                                    <span class="J_address_city"><xsl:value-of select="normalize-space(city)"/></span>市
+                                    <span class="J_address_district"><xsl:value-of select="normalize-space(district)"/></span>区
+                                    <span class="J_address_street"><xsl:value-of select="normalize-space(street)"/></span>街道
+                                    <span class="J_address_detail"><xsl:value-of select="normalize-space(detail)"/></span>
                                 </label>
                             </li>
                         </xsl:for-each>

@@ -4,6 +4,9 @@
     <env>
         <domain>local</domain>
     </env>
+    <login>
+        <uid>git/wurui</uid>
+    </login>
     <p>
         <title>demo page</title>
         <desc>this is deme page</desc>
@@ -67,12 +70,8 @@
             <id>
                 strong notebook
             </id>
-            <price>
-                0.08
-            </price>
-            <orig_price>
-                2.32
-            </orig_price>
+            <price>0.08</price>
+            <orig_price>2.32</orig_price>
             <img>
                 <i>http://i.oxm1.cc/uploads/git/wurui/img/2aj4ikjxcTj07uh1sgRtjukA8ob-667.jpg</i>
                 <i>http://i.oxm1.cc/uploads/git/wurui/img/2ajj22zsuTiztaylwyRba07Flrp.jpg</i>
