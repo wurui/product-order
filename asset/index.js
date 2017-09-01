@@ -9,7 +9,6 @@ define(['oxjs'], function (OXJS) {
             return obj;
         },
         dataAdapter = function (data) {
-
             var result = {
                 title: data.title,
                 totalcount: data.amount,
@@ -17,7 +16,6 @@ define(['oxjs'], function (OXJS) {
                 delivery: JSON.stringify(data.address)
             };
             return result;
-
         };
     return {
         init: function ($mod) {
@@ -48,7 +46,7 @@ define(['oxjs'], function (OXJS) {
             };
 
 
-            var $popup = $('.J_popup', $mod).on('tap', function () {
+            var $popup = $('.J_popup', $mod).on('click', function () {
                 $popup.removeClass('popup-show')
             }).on('change', function (e) {
                 //console.log('addr changed!', e.target,triggerTd);
@@ -59,7 +57,7 @@ define(['oxjs'], function (OXJS) {
                 $('.J_addr_detail', triggerTd).html(detail);
             });
             var tap_ts = 0;
-            $mod.on('tap', function (e) {
+            $mod.on('click', function (e) {//OXJS.toast('clicked')
                 var tar = e.target,
                     action = tar.getAttribute('data-action');
 
