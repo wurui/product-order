@@ -9,6 +9,7 @@ define(['oxjs'], function (OXJS) {
             return obj;
         },
         dataAdapter = function (data) {
+            data.amount=data.amount-0;
             var result = {
                 title: data.title,
                 totalcount: data.amount,
