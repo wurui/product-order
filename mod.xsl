@@ -10,7 +10,7 @@
                 <!--
                 <input type="hidden" name="ds_id" value="{normalize-space(data/product/attribute::ADAPTERID)}"/>
                 -->
-                <input type="hidden" name="product_id" value="{normalize-space(data/product/id)}"/>
+                <input type="hidden" name="product_id" value="{normalize-space(data/product/_id)}"/>
                 <input type="hidden" name="price" value="{normalize-space(data/product/price)}"/>
                 <input type="hidden" name="title" value="{normalize-space(data/product/title)}"/>
                 <div class="product">
