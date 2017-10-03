@@ -2,10 +2,9 @@
 
     <xsl:template match="/root" name="wurui.product-order">
         <xsl:param name="pay_url"/>
-        <xsl:param name="dsid">e0ee59439b39fcc3</xsl:param>
         <!-- className 'J_OXMod' required  -->
 
-        <div class="J_OXMod oxmod-product-order" ox-mod="product-order" data-uid="{login/uid}" data-dsid="{$dsid}" data-payurl="{$pay_url}">
+        <div class="J_OXMod oxmod-product-order" ox-mod="product-order" data-uid="{login/uid}" data-payurl="{$pay_url}">
             <form>
                 <!--
                 <input type="hidden" name="ds_id" value="{normalize-space(data/product/attribute::ADAPTERID)}"/>

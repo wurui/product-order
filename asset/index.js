@@ -26,9 +26,7 @@ define(['oxjs'], function (OXJS) {
             /**
              * 'title',totalcount,totalfee,delivery,pack,bill
              * */
-            var uid = $mod.attr('data-uid'),
-                dsid = $mod.attr('data-dsid'),
-                Rest = OXJS.useREST('order/' + dsid + '/u/' + encodeURIComponent(uid)).setDevHost('http://local.openxsl.com/');;
+            var Rest = OXJS.useREST('order').setDevHost('http://dev.openxsl.com/');;
 
             var triggerTd;
 
