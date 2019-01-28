@@ -37,7 +37,7 @@ define(['oxjs'], function (OXJS) {
             var $count = $('.J_count', $mod),
                 $totalPrice = $('.J_total', $mod),
                 price = $.trim($('.J_price').text()) - 0,
-                $amountInput = $('.J_input', $mod).on('change', onAmountChange);
+                $amountInput = $('.J_input', $mod);
 
             var onAmountChange = function () {
                 var amount = $amountInput.val();
@@ -46,6 +46,7 @@ define(['oxjs'], function (OXJS) {
                 $totalPrice.html(total);
                 f.total.value = total;
             };
+            $amountInput.on('change', onAmountChange)
 
 
             var $popup = $('.J_popup', $mod).on('click', function () {
